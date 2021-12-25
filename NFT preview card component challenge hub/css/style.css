@@ -1,0 +1,163 @@
+/* 
+NFL preview card
+Dirk Vermeulen
+(c) 2021
+ */
+
+ /* 
+ Colors
+ 
+ ### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+
+/* Mobile design */
+
+
+/* General layout */
+body{
+    background-color: hsl(217, 54%, 11%) ;
+    display:flex;
+    flex-direction:column;
+    align-content: stretch;
+    height:100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+.content{
+    flex-grow: 1;
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content:center;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    display:inline-block;
+    box-sizing: border-box;
+    width:325px;
+    padding:25px;
+    margin: auto;
+    border-radius:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius: 7px;
+}
+
+.card h1{
+    font-weight:600;
+    font-size:1.2em;
+    letter-spacing: 1px;
+    padding: 26px 0 15px 0;
+}
+.card h1 a{
+    color:white;
+    text-decoration:none;
+}
+.card h1 a:hover,
+.card h1 a:focus{
+    color:hsl(178, 100%, 50%);
+    /* text-decoration:none; */
+}
+
+.card .description{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    padding:0 0 20px 0;
+    line-height: 1.5em;
+} 
+
+.card .data{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    line-height: 20px;
+    padding-bottom: 15px;
+    border-bottom:solid 1px hsl(215, 32%, 27%);
+}
+
+.card .data .eth{
+    color: hsl(178, 100%, 50%);
+    display:block;
+    background-image: url("../images/icon-ethereum.svg");   
+    background-repeat: no-repeat;
+    padding-left:18px;
+}
+
+.card .data .time{
+    color: hsl(215, 51%, 70%);
+    display:block;
+    background-image: url("../images/icon-clock.svg");
+    background-repeat: no-repeat;
+    padding-left:23px;
+}
+
+.card .creation{
+    padding: 15px 0 5px 0;
+    font-size:0.85em;
+    color:hsl(215, 51%, 70%);
+    font-weight:300;
+    letter-spacing: 0.5px;
+}
+.card .creation img{
+    width:30px;
+    border-radius: 50%;
+    border:solid 1px white;
+        vertical-align: middle;
+        margin-right:15px;
+}
+.card .creation a{
+    color:white;
+    text-decoration:none;
+}
+.card .creation a:hover,
+.card .creation a:focus
+{
+    color:hsl(178, 100%, 50%);
+}
+
+
+
+
+
+/* Desktop */
+@media (min-width:537px){
+.card{
+    width:350px;
+    box-shadow: 0 0 25px 20px hsl(217, 54%,8%);
+    }
+.card .description{
+    padding:0 0 25px 0;
+    font-size:1em;
+    letter-spacing: 0;
+    }
+ .card .data{
+    padding-bottom: 25px;
+    font-size: .9em;
+ }
+ .card .data .time{
+   font-size: .9em;
+
+}
+}
+
+
+/* Footer */
+.attribution, .attribution a{
+    flex-grow: 0;
+    color:hsl(215, 51%, 70%);
+}
