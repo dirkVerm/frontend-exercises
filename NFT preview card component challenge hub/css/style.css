@@ -4,29 +4,59 @@ Dirk Vermeulen
 (c) 2021
  */
 
+ /* Variables */
+ :root{
+    /* promary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --overlay:hsla(178, 100%, 50%, 0.5);
+    --card-shadow: hsl(217, 54%,8%);
+
+    /* Font */
+    --font: 'Outfit', sans-serif; /* 300, 400, 600 */
+ }
 
 /* Mobile design */
 
 /* General layout */
 body{
-    background-color: hsl(217, 54%, 11%) ;
+    background-color: var(--main-bg) ;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
     flex-direction:column;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
     height:100vh;
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font);
     font-size: 18px;
 }
 .content{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -ms-flex-flow: row;
     flex-flow: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack:center;
     align-content:center;
 }
 
 .card{
-    background-color: hsl(216, 50%, 16%);
+    background-color: var(--card-bg);
     display:inline-block;
     box-sizing: border-box;
     width:325px;
@@ -44,6 +74,7 @@ body{
     overflow: hidden;
     padding:0;
     display:block;
+
 }
 
 .card .image img{
@@ -59,6 +90,8 @@ body{
     top:0;
     width: 100%;
     height:100%;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .card .image:hover .overlay,
@@ -66,7 +99,7 @@ body{
     background-image: url(../images/icon-view.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-color:hsla(178, 100%, 50%, 0.5);
+    background-color:var(--overlay);
 }
 
 .card h1{
@@ -78,15 +111,16 @@ body{
 .card h1 a{
     color:white;
     text-decoration:none;
+    -webkit-transition: color 0.5s ease-in-out;
+    transition:color 0.5s ease-in-out
 }
 .card h1 a:hover,
 .card h1 a:focus{
-    color:hsl(178, 100%, 50%);
-    /* text-decoration:none; */
+    color:var(--cyan);
 }
 
 .card .description{
-    color:hsl(215, 51%, 70%);
+    color:var(--soft-blue);
     font-weight: 300;
     font-size: 0.9em;
     letter-spacing: 0.5px;
@@ -95,16 +129,20 @@ body{
 } 
 
 .card .data{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 0.85em;
     line-height: 20px;
     padding-bottom: 15px;
-    border-bottom:solid 1px hsl(215, 32%, 27%);
+    border-bottom:solid 1px var(--line);
 }
 
 .card .data .eth{
-    color: hsl(178, 100%, 50%);
+    color: var(--cyan);
     display:block;
     background-image: url("../images/icon-ethereum.svg");   
     background-repeat: no-repeat;
@@ -112,7 +150,7 @@ body{
 }
 
 .card .data .time{
-    color: hsl(215, 51%, 70%);
+    color: var(--soft-blue);
     display:block;
     background-image: url("../images/icon-clock.svg");
     background-repeat: no-repeat;
@@ -122,7 +160,7 @@ body{
 .card .creation{
     padding: 15px 0 5px 0;
     font-size:0.85em;
-    color:hsl(215, 51%, 70%);
+    color:var(--soft-blue);
     font-weight:300;
     letter-spacing: 0.5px;
 }
@@ -130,17 +168,19 @@ body{
     width:30px;
     border-radius: 50%;
     border:solid 1px white;
-        vertical-align: middle;
-        margin-right:15px;
+    vertical-align: middle;
+    margin-right:15px;
 }
 .card .creation a{
     color:white;
     text-decoration:none;
+    -webkit-transition: color 0.5s ease-in-out;
+    transition:color 0.5s ease-in-out;
 }
 .card .creation a:hover,
 .card .creation a:focus
 {
-    color:hsl(178, 100%, 50%);
+    color:var(--cyan);
 }
 
 
@@ -149,28 +189,38 @@ body{
 
 /* Desktop */
 @media (min-width:537px){
-.card{
-    width:350px;
-    box-shadow: 0 0 25px 20px hsl(217, 54%,8%);
+    .card{
+        width:350px;
+        box-shadow: 0 0 25px 20px var(--card-shadow);
     }
-.card .description{
-    padding:0 0 25px 0;
-    font-size:1em;
-    letter-spacing: 0;
+    .card .description{
+        padding:0 0 25px 0;
+        font-size:1em;
+        letter-spacing: 0;
     }
- .card .data{
-    padding-bottom: 25px;
+    .card .data{
+        padding-bottom: 25px;
+        font-size: .9em;
+    }
+    .card .data .time{
     font-size: .9em;
- }
- .card .data .time{
-   font-size: .9em;
 
-}
+    }
 }
 
 
 /* Footer */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: var(--soft-blue);
+    }
 .attribution, .attribution a{
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
-    color:hsl(215, 51%, 70%);
+    color:var(--soft-blue);
 }

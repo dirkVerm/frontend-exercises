@@ -28,6 +28,15 @@ Users should be able to:
 
 ## My process
 
+### Updates
+2021/12/26
+First version
+2021/12/27
+Update overlay image
+2021/12/28
+Changed to using CSS variables and added animation 
+Thanks to https://www.frontendmentor.io/profile/alexcarmonadev for inspiration
+
 ### Built with
 
 - Semantic HTML5 markup
