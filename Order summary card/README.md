@@ -1,6 +1,5 @@
 # Frontend Mentor - Order summary card
 
-![Design preview for the Order summary card coding challenge](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
 ## Table of contents
 
@@ -16,6 +15,8 @@
 ## Overview
 
 ### The challenge
+
+[Design preview for the Order summary card coding challenge](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
 Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
 
