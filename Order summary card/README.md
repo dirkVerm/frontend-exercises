@@ -27,8 +27,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/dirkVerm/frontendmentor.io/tree/main/Order%20summary%20card 
-- Live Site URL: https://dirkverm.github.io/frontendmentor.io/Order%20summary%20card/ 
+- [Solution URL](https://github.com/dirkVerm/frontendmentor.io/tree/main/Order%20summary%20card) 
+- [Live Site URL](https://dirkverm.github.io/frontendmentor.io/Order%20summary%20card/)
 
 ## My process
 
