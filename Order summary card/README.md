@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Order summary card coding challenge](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
 ## Table of contents
 
@@ -25,12 +25,10 @@ Your users should be able to:
 
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
 ### Links
 
-- Solution URL: https://github.com/dirkVerm/frontendmentor.io/tree/main/NFT%20preview%20card%20component%20challenge%20hub
-- Live Site URL: https://dirkverm.github.io/frontendmentor.io/NFT%20preview%20card%20component%20challenge%20hub/ 
+- Solution URL: https://github.com/dirkVerm/frontendmentor.io/tree/main/Order%20summary%20card 
+- Live Site URL: https://dirkverm.github.io/frontendmentor.io/Order%20summary%20card/ 
 
 ## My process
 
