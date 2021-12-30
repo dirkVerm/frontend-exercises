@@ -72,7 +72,7 @@ body{
 
 /* Main */
 main .container{
-    width:330px;
+    width:280px;
     display: inline-block;
     background-color:white;
     background-image:url(../images/illustration-hero.svg);
@@ -80,7 +80,7 @@ main .container{
     background-position-x: center;
     background-size: 100% auto;
     border-radius:20px;
-    padding:195px 0 35px 0;
+    padding:195px 25px 35px 25px;
     box-shadow: 0 10px 20px hsl(224, 23%, 80%);
 }
 main .container h1{
@@ -93,7 +93,7 @@ main .container h1{
 main .container .description{
     color:var(--desaturated-blue);
     text-align: center;
-    padding: 25px 30px;
+    padding: 25px 0px;
     line-height: 1.5em;
 }
 
@@ -105,7 +105,6 @@ main .container .plan{
     border-radius: 10px;
     height:80px;
     padding:0 15px 0 85px;
-    margin: 0 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -164,7 +163,7 @@ main .container .actions a{
     text-decoration: none;
 }
 main .container .actions a.proceed{
-    margin:24px 25px 25px;
+    margin:24px 0px 25px;
     padding:18px 0;
     border-radius: 10px;
     background-color: var(--bright-blue);
@@ -199,8 +198,8 @@ footer.attribution a { color: hsl(228, 45%, 30%); }
 
 @media screen and (min-width:537px) {
     main .container{
-        width:450px;
-        padding:272px 0 50px 0;
+        width:350px;
+        padding:272px 50px 50px 50px;
     }
     main .container h1{
         font-size: 1.7em;
