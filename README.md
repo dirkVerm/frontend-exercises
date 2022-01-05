@@ -13,7 +13,7 @@ Dirk Vermeulen
 
 
 ## HTML
-### 01 Marking up a letter 
+* 01 Marking up a letter 
 [Repository](https://github.com/dirkVerm/frontend-exercises/tree/main/01%20HTML/01%20Letter%20markup)
 [Site](https://dirkverm.github.io/frontend-exercises/01%20HTML/01%20Letter%20markup/)
 
