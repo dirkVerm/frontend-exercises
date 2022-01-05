@@ -2,8 +2,6 @@
 
 Different exercises I made during my training to become a frontend developer. Feel free to use them.
 
-For more information on my track to become a front end developer => [Resources](Resources.md)
-
 Dirk Vermeulen
 
 ## Table of contents
@@ -15,7 +13,7 @@ Dirk Vermeulen
 
 
 ## HTML
-01 Marking up a letter 
+* 01 Marking up a letter 
 [Repository](https://github.com/dirkVerm/frontend-exercises/tree/main/01%20HTML/01%20Letter%20markup)
 [Site](https://dirkverm.github.io/frontend-exercises/01%20HTML/01%20Letter%20markup/)
 
