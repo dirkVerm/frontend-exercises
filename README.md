@@ -15,11 +15,19 @@ Dirk Vermeulen
 
 
 ## HTML
+
 - 01 Marking up a letter 
 [Repository](https://github.com/dirkVerm/frontend-exercises/tree/main/01%20HTML/01%20Letter%20markup)
 [Site](https://dirkverm.github.io/frontend-exercises/01%20HTML/01%20Letter%20markup/)
 
 ## CSS
+- 01 NFT preview card component
+[Repository](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/01%20NFT%20preview%20card%20component)
+[Site](https://dirkverm.github.io/frontend-exercises/02%20CSS/01%20NFT%20preview%20card%20component/)
+
+- 02 Order summary Card
+[Repository](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/02%20Order%20summary%20card)
+[Site](https://dirkverm.github.io/frontend-exercises/02%20CSS/02%20Order%20summary%20card/)
 
 ## Bootstrap
 
