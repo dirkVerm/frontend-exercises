@@ -8,13 +8,17 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/01%20NFT%20preview%20card%20component/)
 
 ## Updates
+
 2021/12/26  
   First version  
+
 2021/12/27  
-  Update overlay image  
+  Update overlay image
+
 2021/12/28  
   Changed to using CSS variables and added animation   
-  Thanks to https://www.frontendmentor.io/profile/alexcarmonadev for inspiration  
+  Thanks to https://www.frontendmentor.io/profile/alexcarmonadev for inspiration
+
 
 ## Author
 
