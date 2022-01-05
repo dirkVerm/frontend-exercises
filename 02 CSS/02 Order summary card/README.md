@@ -4,8 +4,8 @@ This is a solution to the [Order summary card coding challenge](https://www.fron
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/.../)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/.../)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/02%20Order%20summary%20card)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/02%20Order%20summary%20card/)
 
 ## Updates
 2021/12/30
