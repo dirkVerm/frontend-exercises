@@ -4,8 +4,8 @@ This is a solution to the [Structuring planet data](hhttps://developer.mozilla.o
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/01%20HTML/03%20Mozilla%20Splash%20page)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/01%20HTML/03%20Mozilla%20Splash%20page/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/01%20HTML/04%20Structuring%20planet%20data)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/01%20HTML/04%20Structuring%20planet%20data/)
 
 ## Updates
 
