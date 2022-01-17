@@ -4,8 +4,8 @@ This is a solution to a question in the FB group [The Web Developer Bootcamp](ht
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/02%20Order%20summary%20card)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/02%20Order%20summary%20card/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/03%20Border%20over%20image)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/03%20Border%20over%20image/)
 
 ## Updates
 2022/01/17
