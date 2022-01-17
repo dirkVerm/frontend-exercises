@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border over image</title>
+    <style>
+        .border {
+            position: relative;
+            display: inline-block;
+            line-height: 0;
+        }
+
+        .border::after {
+            content: "";
+            display: block;
+            border: 3px solid #fff;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            box-sizing: border-box;
+            height: calc(100% - 40px);
+            width: calc(100% - 40px);
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <img src="images/photo-400x600jpg.jpg" alt="Couple in fields">
+    </div>
+</body>
+
+</html>
