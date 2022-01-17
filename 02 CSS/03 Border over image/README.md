@@ -2,6 +2,8 @@
 
 This is a solution to a question in the FB group [The Web Developer Bootcamp](https://www.facebook.com/groups/2100745003324401/) to produce a border over an image.
 
+![Screenshot](_design/screenshot.PNG)
+
 ## Links
 
 - [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/03%20Border%20over%20image)
