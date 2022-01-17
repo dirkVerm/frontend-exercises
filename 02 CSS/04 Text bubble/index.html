@@ -43,6 +43,7 @@
             pointer-events: none;
 
             opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
 
         .arrow::after {
@@ -58,7 +59,7 @@
         .arrow:hover::after,
         .arrow:hover::before {
             opacity: 1;
-            transition: opacity 0.5s;
+
         }
 
 
@@ -124,7 +125,7 @@
             margin-top: -36px;
         }
 
-                /* Layout for down arrow */
+        /* Layout for down arrow */
         .down::after,
         .down::before {
             /*Put on top of the element*/
