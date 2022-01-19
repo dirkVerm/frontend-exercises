@@ -45,9 +45,13 @@ Dirk Vermeulen
     - [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/03%20Border%20over%20image)
     - [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/03%20Border%20over%20image/)
 
-- 03 Text bubble
+- 04 Text bubble
     - [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/04%20Text%20bubble)
     - [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/04%20Text%20bubble/)
+
+- 05 Gradient backgrounds
+    - [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/05%20Gradient%20backgrounds)
+    - [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/05%20Gradient%20backgrounds/)
 
 ## Bootstrap
 

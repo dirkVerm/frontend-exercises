@@ -6,8 +6,8 @@ Based on [MDN Backgrounds and borders](https://developer.mozilla.org/en-US/docs/
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/05%20Color%20gradients)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/05%20Color%20gradients/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/05%20Gradient%20backgrounds)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/05%20Gradient%20backgrounds/)
 
 ## Updates
 2022/01/19
