@@ -6,8 +6,8 @@ Based on [MDN Backgrounds and borders](https://developer.mozilla.org/en-US/docs/
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/04%20Text%20bubble)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/04%20Text%20bubble/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/05%20Color%20gradients)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/05%20Color%20gradients/)
 
 ## Updates
 2022/01/19
