@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient backgrounds</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: conic-gradient(transparent 0.25turn, hsla(0, 0%, 0%, 0.05) .25turn .5turn, transparent 0.5turn 0.75turn, hsla(0, 0%, 0%, 0.05) .75turn .5turn) center center / 30px 60px repeat seashell;
+        }
+
+        .painting {
+            width: 50%;
+            height: 50%;
+            border: ridge 10px saddlebrown;
+            background: linear-gradient(to top, blue 0%, lightblue 25%, rgba(230, 212, 173, 0.8) 30%, transparent 30%), 0 radial-gradient(ellipse 100% 10% at 20% 60%, rgba(255, 255, 255, 0.74), transparent 40%),
+                radial-gradient(ellipse 110% 5% at 60% 65%, rgba(255, 255, 255, 0.74), transparent 50%),
+                radial-gradient(ellipse 200% 8% at 80% 40%, rgba(255, 255, 255, 0.74), transparent 50%),
+                radial-gradient(ellipse 200% 10% at 20% 20%, rgba(255, 255, 255, 0.74), transparent 50%),
+                radial-gradient(circle at 50% 75%, yellow 10%, transparent 15%),
+                linear-gradient(to top, rgb(245, 236, 116) 20%, red 100%);
+            box-shadow: 5px 5px 15px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painting"></div>
+</body>
+
+</html>
