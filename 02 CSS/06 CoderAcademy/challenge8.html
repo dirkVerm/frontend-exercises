@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderAcademy - Challenge 8</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            padding: 0 0 10px 0;
+        }
+
+        form section:first-child,
+        form section:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 20rem;
+            padding: 0px;
+            height: 2rem;
+            font-size: 1rem;
+        }
+
+        form section:first-child p {
+            font-size: 0.8rem;
+            margin: 0.5rem 0 1rem 0;
+            color: gray;
+        }
+
+        section:nth-of-type(3) {
+            padding: 10px 0;
+        }
+
+        button {
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <section>
+            <label for="email">Email adress</label>
+            <input type="text" name="email" id="email" placeholder="Enter email">
+            <p>We'll never share your email with anyone else</p>
+        </section>
+        <section>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </section>
+        <section>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Check me out</label>
+        </section>
+        <section>
+            <button>Submit</button>
+        </section>
+
+    </form>
+</body>
+
+</html>
