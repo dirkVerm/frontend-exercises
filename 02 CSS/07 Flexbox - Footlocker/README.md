@@ -5,8 +5,8 @@ Originally the exercise was mentioned on [CoderAcademy HTML-CSS challenges](http
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/05%20Gradient%20backgrounds)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/05%20Gradient%20backgrounds/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/07%20Flexbox%20-%20Footlocker)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/07%20Flexbox%20-%20Footlocker/)
 
 ## Updates
 2022/02/04
