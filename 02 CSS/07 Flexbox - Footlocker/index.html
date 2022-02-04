@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Foot Locker</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="promotion">
+            <a href="#">
+                Free shipping for FLX members
+                <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12.018 6.008a3.005 3.005 0 00-3.005 3.005h2.004c0-.553.448-1.001 1.001-1.001h.824c.652 0 1.18.528 1.18 1.18v.322c0 .83-.673 1.503-1.503 1.503h-.2c-.72 0-1.302.583-1.302 1.302v1.703h2.003v-1.037a3.507 3.507 0 003.005-3.47V9.19a3.183 3.183 0 00-3.183-3.183h-.824zm-1.001 10.017h2.003v2.003h-2.003v-2.003z M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="settings">
+            <div class="language">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 12">
+                        <path fill="#00247D"
+                            d="M0 1.873v1.82h2.58L0 1.872zM2.138 12h3.82V9.306L2.138 12zm8.404-2.694V12h3.82l-3.82-2.694zM0 8.308v1.819l2.58-1.82H0zM14.363 0h-3.821v2.694L14.362 0zM16.5 10.127v-1.82h-2.58l2.58 1.82zm0-6.435V1.873l-2.58 1.82h2.58zM5.958 0h-3.82l3.82 2.694V0z">
+                        </path>
+                        <path fill="#CF1B2B"
+                            d="M11.523 8.308l4.45 3.139c.218-.226.374-.504.455-.808L13.12 8.308h-1.598zm-5.565 0h-.981l-4.45 3.138c.238.245.544.42.887.5l4.544-3.203v-.435zm4.584-4.616h.981l4.45-3.138a1.824 1.824 0 00-.887-.5l-4.544 3.203v.435zm-5.565 0L.527.554a1.847 1.847 0 00-.455.807l3.307 2.331h1.598z">
+                        </path>
+                        <path fill="#EEE"
+                            d="M16.5 7.385H9.625V12h.917V9.306L14.362 12h.305a1.819 1.819 0 001.307-.553l-4.451-3.14h1.598l3.307 2.332a1.83 1.83 0 00.072-.485v-.027l-2.58-1.82h2.58v-.922zm-16.5 0v.923h2.58L0 10.127v.027c0 .503.201.959.526 1.292l4.451-3.138h.981v.435l-4.544 3.204c.135.032.274.053.42.053h.304l3.82-2.694V12h.917V7.385H0zm16.5-5.539c0-.484-.189-.948-.526-1.292l-4.451 3.138h-.981v-.435L15.086.053a1.822 1.822 0 00-.42-.053h-.303l-3.821 2.694V0h-.917v4.615H16.5v-.923h-2.58l2.58-1.819v-.027zM5.958 0v2.694L2.138 0h-.305A1.816 1.816 0 00.526.554l4.451 3.138H3.379L.072 1.362c-.046.157-.07.32-.072.484v.027l2.58 1.82H0v.922h6.875V0h-.917z">
+                        </path>
+                        <path fill="#CF1B2B"
+                            d="M9.625 4.615V0h-2.75v4.615H0v2.77h6.875V12h2.75V7.385H16.5v-2.77H9.625z"></path>
+                    </svg>English
+                </a>
+            </div>
+            <div class="client">
+                <a href="#">
+                    Welcome, Sign in
+                </a>
+                <a href="#">
+                    Customer service
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.svg" alt="Logo Foot Locker">
+            </a>
+        </div>
+        <div class="mainNav">
+            <ul>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Releases</a></li>
+                <li><a href="#">Flx Membership</a></li>
+            </ul>
+        </div>
+        <div class="searchNav">
+            <div class="search">
+                <form action="#">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button type="submit">
+                        <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M24.01 22.6l-8.03-8.03a8.96 8.96 0 10-1.41 1.4L22.6 24l1.4-1.4zM8.97 15.94A6.98 6.98 0 119 1.98a6.98 6.98 0 01-.02 13.96z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="subnav">
+                <ul>
+                    <li class="heart">
+                        <a href="#">
+                            <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="cart">
+                        <a href="#">
+                            <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.02 18.58l.42-2H7.65l-.31-1.46h14.34L24 3.65H4.89L4.12 0H0v2h2.5l3.53 16.58h14.99zm.42-12.93l-1.51 7.47H6.91L5.32 5.65h16.12zM7.52 19.74a2.11 2.11 0 10-.01 4.23c1.17 0 2.12-.94 2.13-2.11a2.1 2.1 0 00-2.12-2.12zM18 21.85a2.13 2.13 0 014.25.01 2.13 2.13 0 01-4.25-.01z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><span>></span><a href="#">English</a></li>
+                <li><span>></span><a href="#">All</a></li>
+                <li><span>></span><a href="#">Sale</a></li>
+                <li><span>></span><a href="#">Men's sale</a></li>
+                <li><span>></span>Men's footwear sale</li>
+            </ul>
+        </nav>
+        <h1>Men's footwear sale</h1>
+        <h2>Showing <strong>1 - 32</strong> of <strong>32</strong> results</h2>
+        <div class="results">
+            <aside>
+                <h3>Refine results</h3>
+                <ul class="facetMain">
+                    <li><button>Shoe style<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                    fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M13 11V0h-2v11H0v2h11v11h2V13h11v-2H13z"></path>
+                                </svg></span></button></li>
+                    <li><button>Size<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                    fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M13 11V0h-2v11H0v2h11v11h2V13h11v-2H13z"></path>
+                                </svg></span></button></li>
+                    <li><button>Brand<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                    fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M13 11V0h-2v11H0v2h11v11h2V13h11v-2H13z"></path>
+                                </svg></span></button></li>
+                    <li><button>Color<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                    fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M13 11V0h-2v11H0v2h11v11h2V13h11v-2H13z"></path>
+                                </svg></span></button></li>
+                    <li><button>Price<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                    fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M13 11V0h-2v11H0v2h11v11h2V13h11v-2H13z"></path>
+                                </svg></span></button></li>
+                    <li>
+                        <ul class="facetSub">
+                            <li><input type="checkbox" id="R1"><label for="R1">Foot locker only (12)</label></li>
+                            <li><input type="checkbox" id="R2"><label for="R2">Online only (1)</label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <article>
+                <div class="searchResults">
+                    <div class="removeFilters">
+                        <ul>
+                            <li><a href="#">Sale<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                            fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 1.44L22.59.03 12.01 10.59 1.41 0 0 1.4 10.6 12 0 22.6 1.42 24l10.59-10.58 10.58 10.56 1.41-1.4L13.43 12 24 1.44z">
+                                            </path>
+                                        </svg></span></a></li>
+                            <li><a href="#">Men<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                            fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 1.44L22.59.03 12.01 10.59 1.41 0 0 1.4 10.6 12 0 22.6 1.42 24l10.59-10.58 10.58 10.56 1.41-1.4L13.43 12 24 1.44z">
+                                            </path>
+                                        </svg></span></a></li>
+                            <li><a href="#">Shoes<span><svg focusable="false" aria-hidden="true" fill="currentColor"
+                                            fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 1.44L22.59.03 12.01 10.59 1.41 0 0 1.4 10.6 12 0 22.6 1.42 24l10.59-10.58 10.58 10.56 1.41-1.4L13.43 12 24 1.44z">
+                                            </path>
+                                        </svg></span></a></li>
+                            <li><a href="#">Clear All</a></li>
+                        </ul>
+                    </div>
+                    <div class="order">
+                        <form action="#">
+                            <select name="orderSelect" id="orderSelect">
+                                <option value="" id="order1">Initial Results</option>
+                                <option value="" id="order2">Alphabetical (A to Z)</option>
+                                <option value="" id="order3">New Arrivals</option>
+                                <option value="" id="order4">Price(Low to High)</option>
+                                <option value="" id="order5">Price(High to Low)</option>
+                                <option value="" id="order6">Brand Names(A to Z)</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="products">
+                    <section>
+                        <div class="stripers">
+                            <p>
+                                Stripers recommend
+                            </p>
+                        </div>
+                        <div class="productBorder">
+                            <div class="productImage">
+                                <img src="img/shoes/244102375904.jpg" alt="">
+                                <div class="productHeader">
+                                    <div class="sale">SALE</div>
+                                    <div class="productHeart">
+                                        <svg focusable="false" aria-hidden="true" fill="currentColor"
+                                            fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="variants">
+                                    <p>More colors available</p>
+                                    <ul>
+                                        <li><a href="#"><img src="img/shoes/244100116904.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/244209506104.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/314103122504.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="productDescription">
+                                <h4>
+                                    <a href="#">
+                                        Nike Air Max 90 Essential
+                                    </a>
+                                </h4>
+                                <p>
+                                    Men Shoes
+                                    <span>.</span>
+                                    White-white-Wolf Grey
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>
+                                    <span class="priceFinal">&pound;99.99</span>
+                                    <span class="priceOld">&pound;124.99</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section>
+                        <div class="stripers">
+                            <p>
+                                Stripers recommend
+                            </p>
+                        </div>
+                        <div class="productBorder">
+                            <div class="productImage">
+                                <img src="img/shoes/244102375904.jpg" alt="">
+                                <div class="productHeader">
+                                    <div class="sale">SALE</div>
+                                    <div class="productHeart">
+                                        <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                    
+                                <div class="variants">
+                                    <p>More colors available</p>
+                                    <ul>
+                                        <li><a href="#"><img src="img/shoes/244100116904.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/244209506104.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/314103122504.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="productDescription">
+                                <h4>
+                                    <a href="#">
+                                        Nike Air Max 90 Essential
+                                    </a>
+                                </h4>
+                                <p>
+                                    Men Shoes
+                                    <span>.</span>
+                                    White-white-Wolf Grey
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>
+                                    <span class="priceFinal">&pound;99.99</span>
+                                    <span class="priceOld">&pound;124.99</span>
+                                </p>
+                            </div>
+                    
+                        </div>
+                    </section>
+                    <section>
+                        <div class="stripers">
+                        
+                        </div>
+                        <div class="productBorder">
+                            <div class="productImage">
+                                <img src="img/shoes/244102375904.jpg" alt="">
+                                <div class="productHeader">
+                                    <div class="sale">SALE</div>
+                                    <div class="productHeart">
+                                        <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                    
+                                <div class="variants">
+                                    <p>More colors available</p>
+                                    <ul>
+                                        <li><a href="#"><img src="img/shoes/244100116904.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/244209506104.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/314103122504.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="productDescription">
+                                <h4>
+                                    <a href="#">
+                                        Nike Air Max 90 Essential
+                                    </a>
+                                </h4>
+                                <p>
+                                    Men Shoes
+                                    <span>.</span>
+                                    White-white-Wolf Grey
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>
+                                    <span class="priceFinal">&pound;99.99</span>
+                                    <span class="priceOld">&pound;124.99</span>
+                                </p>
+                            </div>
+                    
+                        </div>
+                    </section>
+                    <section>
+                        <div class="stripers">
+                            <p>
+                                Stripers recommend
+                            </p>
+                        </div>
+                        <div class="productBorder">
+                            <div class="productImage">
+                                <img src="img/shoes/244102375904.jpg" alt="">
+                                <div class="productHeader">
+                                    <div class="sale">SALE</div>
+                                    <div class="productHeart">
+                                        <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                    
+                                <div class="variants">
+                                    <p>More colors available</p>
+                                    <ul>
+                                        <li><a href="#"><img src="img/shoes/244100116904.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/244209506104.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/314103122504.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="productDescription">
+                                <h4>
+                                    <a href="#">
+                                        Nike Air Max 90 Essential
+                                    </a>
+                                </h4>
+                                <p>
+                                    Men Shoes
+                                    <span>.</span>
+                                    White-white-Wolf Grey
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>
+                                    <span class="priceFinal">&pound;99.99</span>
+                                    <span class="priceOld">&pound;124.99</span>
+                                </p>
+                            </div>
+                    
+                        </div>
+                    </section>
+                    <section>
+                        <div class="stripers">
+                            <p>
+                                Stripers recommend
+                            </p>
+                        </div>
+                        <div class="productBorder">
+                            <div class="productImage">
+                                <img src="img/shoes/244102375904.jpg" alt="">
+                                <div class="productHeader">
+                                    <div class="sale">SALE</div>
+                                    <div class="productHeart">
+                                        <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                    
+                                <div class="variants">
+                                    <p>More colors available</p>
+                                    <ul>
+                                        <li><a href="#"><img src="img/shoes/244100116904.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/244209506104.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/314103122504.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="productDescription">
+                                <h4>
+                                    <a href="#">
+                                        Nike Air Max 90 Essential
+                                    </a>
+                                </h4>
+                                <p>
+                                    Men Shoes
+                                    <span>.</span>
+                                    White-white-Wolf Grey
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>
+                                    <span class="priceFinal">&pound;99.99</span>
+                                    <span class="priceOld">&pound;124.99</span>
+                                </p>
+                            </div>
+                    
+                        </div>
+                    </section>
+                    <section>
+                        <div class="stripers">
+                            <p>
+                                Stripers recommend
+                            </p>
+                        </div>
+                        <div class="productBorder">
+                            <div class="productImage">
+                                <img src="img/shoes/244102375904.jpg" alt="">
+                                <div class="productHeader">
+                                    <div class="sale">SALE</div>
+                                    <div class="productHeart">
+                                        <svg focusable="false" aria-hidden="true" fill="currentColor" fill-rule="evenodd"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.17 2a4.1 4.1 0 012.94 1.24l1.47 1.49L12 6.17l1.42-1.44 1.47-1.49a4.1 4.1 0 015.88-.01 4.3 4.3 0 010 6.04L12 18.15 3.23 9.27a4.3 4.3 0 010-6.04A4.13 4.13 0 016.17 2zm0-2A6.23 6.23 0 000 6.25c0 1.67.64 3.24 1.81 4.42L12 21l10.19-10.33A6.23 6.23 0 0024 6.25 6.23 6.23 0 0017.83 0a6.1 6.1 0 00-4.36 1.83L12 3.32l-1.47-1.49A6.07 6.07 0 006.17 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                    
+                                <div class="variants">
+                                    <p>More colors available</p>
+                                    <ul>
+                                        <li><a href="#"><img src="img/shoes/244100116904.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/244209506104.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/shoes/314103122504.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="productDescription">
+                                <h4>
+                                    <a href="#">
+                                        Nike Air Max 90 Essential
+                                    </a>
+                                </h4>
+                                <p>
+                                    Men Shoes
+                                    <span>.</span>
+                                    White-white-Wolf Grey
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>
+                                    <span class="priceFinal">&pound;99.99</span>
+                                    <span class="priceOld">&pound;124.99</span>
+                                </p>
+                            </div>
+                    
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+        </div>
+    </main>
+<aside class="feedback">
+    <a href="" class="feedback__link">
+        Feedback
+    </a>
+    
+</aside>
+</body>
+
+</html>
