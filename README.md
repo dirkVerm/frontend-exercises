@@ -47,6 +47,12 @@ Dirk Vermeulen
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/05%20Gradient%20backgrounds/)
 - 06 CoderAcademy: 
   [Code and demo links](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/06%20CoderAcademy/) 
+- 07 Flexbox - Footlocker:
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/07%20Flexbox%20-%20Footlocker)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/07%20Flexbox%20-%20Footlocker/)
+- 08 404 Not found:
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/08%20404%20not%20found)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/08%20404%20not%20found/)
 
 
 ## Bootstrap
