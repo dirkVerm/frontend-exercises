@@ -4,8 +4,8 @@ Basic challenge from Devchallenges.io [404 Not Found](https://devchallenges.io/c
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/07%20Flexbox%20-%20Footlocker)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/07%20Flexbox%20-%20Footlocker)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/08%20404%20not%20found)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/08%20404%20not%20found/)
 
 ## Updates
 2022/02/10
