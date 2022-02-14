@@ -53,6 +53,9 @@ Dirk Vermeulen
 - 08 404 Not found:
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/08%20404%20not%20found)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/08%20404%20not%20found/)
+- 09 Basic layout - MDN
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/09%20Basic%20layout%20-%20MDN)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/09%20Basic%20layout%20-%20MDN/)
 
 
 ## Bootstrap
