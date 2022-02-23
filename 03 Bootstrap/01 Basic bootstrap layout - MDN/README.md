@@ -10,6 +10,8 @@ The image that is inside the article should have text wrapped around it.
 The &lt;article&gt; and &lt;aside&gt; elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.
 The photographs should display as a two column grid with a 1 pixel gap between the images.
 
+This time, I used Bootstrap.
+
 ## Links
 
 - [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/09%20Basic%20layout%20-%20MDN)
