@@ -14,11 +14,11 @@ This time, I used Bootstrap.
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/09%20Basic%20layout%20-%20MDN)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/09%20Basic%20layout%20-%20MDN/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/01%20Basic%20bootstrap%20layout%20-%20MDN)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/01%20Basic%20bootstrap%20layout%20-%20MDN/)
 
 ## Updates
-2022/02/14
+2022/02/20
 First version
 
 ## Author
