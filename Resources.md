@@ -14,6 +14,14 @@ So in addition to Colt Steeles course, I used following resources. There are man
 
 ## CSS
 
+* [MSN CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+
+## BEM
+
+* [Quick start](https://en.bem.info/)
+
 ## Bootstrap
+
+* [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 
 ## JavaScript
