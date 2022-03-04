@@ -25,6 +25,7 @@ So in addition to Colt Steeles course, I used following resources. There are man
 * DONE CSS debugging with Chrome dev tools https://developer.chrome.com/docs/devtools/overview/
 * DONE Organizing CSS: OOCSS https://github.com/stubbornella/oocss/wiki
 * TODO https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+* TODO https://www.freecodecamp.org/news/how-to-create-and-implement-a-design-system-with-css/
 
 ## Git
 * DONR https://docs.github.com/en/get-started/quickstart/hello-world
@@ -35,9 +36,14 @@ So in addition to Colt Steeles course, I used following resources. There are man
 ## Bootstrap
 
 
+## CSS framworks
+* CSSUI https://www.cssui.dev/
 
 ## JavaScript
-* Javascript debugging with Chrome dev tools https://developer.chrome.com/docs/devtools/overview/ vanaf 17'
+* TODO Javascript debugging with Chrome dev tools https://developer.chrome.com/docs/devtools/overview/ vanaf 17'
+
+## JS testing
+* TODO Javascript testing framework https://jestjs.io/ 
 
 ## Terminal commands
 
