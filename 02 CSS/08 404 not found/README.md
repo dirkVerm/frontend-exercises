@@ -13,6 +13,7 @@ First version
 
 ## Author
 
+- [Developer-frontend.com](https://developer-frontend.com)
 - [GitHub](https://github.com/dirkVerm)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/dirkVerm)
 

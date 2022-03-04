@@ -13,6 +13,7 @@ This is a solution to the [MDN - Marking up a letter](https://developer.mozilla.
 
 ## Author
 
+- [Developer-frontend.com](https://developer-frontend.com)
 - [GitHub](https://github.com/dirkVerm)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/dirkVerm)
 
