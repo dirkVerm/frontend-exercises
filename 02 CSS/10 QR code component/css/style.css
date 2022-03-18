@@ -29,6 +29,7 @@ main {
     padding:1rem;
     width:290px;
     text-align:center;
+    box-shadow: 0 5px 20px 0px #ccc ;
 }
     .card__qr{
         height:290px;
