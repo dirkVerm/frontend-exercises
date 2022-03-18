@@ -56,6 +56,9 @@ Dirk Vermeulen
 - 09 Basic layout - MDN
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/09%20Basic%20layout%20-%20MDN)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/09%20Basic%20layout%20-%20MDN/)
+- 10 QR code component
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/10%20QR%20code%20component)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/10%20QR%20code%20component/)
 
 
 ## Bootstrap
