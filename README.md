@@ -59,8 +59,9 @@ Dirk Vermeulen
 - 10 QR code component
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/10%20QR%20code%20component)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/10%20QR%20code%20component/)
-
-
+- 11  Stat preview card component
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/11%20Stats%20preview%20card%20component)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/11%20Stats%20preview%20card%20component/)
 ## Bootstrap
 - 01 Basic layout - MDN
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/01%20Basic%20bootstrap%20layout%20-%20MDN)
