@@ -1,0 +1,158 @@
+:root {
+    --clr-bg-main_background: hsl(0, 0%, 95%);
+    --clr-bg-bright_orange: hsl(31, 77%, 52%);
+    --clr-bg-dark_cyan: hsl(184, 100%, 22%);
+    --clr-bg-very_dark_cyan: hsl(179, 100%, 13%);
+    --clr-bg-buttons: hsl(0, 0%, 95%);
+    --clr-txt-white_transparent: hsla(0, 0%, 100%, 0.75);
+    --clr-txt-heading: hsl(0, 0%, 95%);
+    --fnt-size: 15px;
+    --fnt-headings: 'Big Shoulders Display', cursive;
+    --fnt-standard: 'Lexend Deca', sans-serif;
+}
+
+
+
+body {
+    background-color: var(--clr-main_background);
+    font-size: var(--fnt-size);
+    font-family: var(--fnt-standard);
+    color: var(--clr-txt-white_transparent);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+p,
+h1 {
+    margin: 0;
+}
+
+/* Main */
+main {
+    flex: 1;
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5rem 1.5rem 1rem 1.5rem;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 8rem 3rem 3rem 3rem;
+    font-family: var(--fnt-standard);
+    color: var(--clr-txt-white_transparent);
+    line-height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card--sedans {
+    background-color: var(--clr-bg-bright_orange);
+    background-image: url("../images/icon-sedans.svg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card--suvs {
+    background-color: var(--clr-bg-dark_cyan);
+    background-image: url("../images/icon-suvs.svg");
+}
+
+.card--luxury {
+    background-color: var(--clr-bg-very_dark_cyan);
+    background-image: url("../images/icon-luxury.svg");
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card__title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-family: var(--fnt-headings);
+    flex:0;
+}
+
+.card__text {
+    margin-bottom: 2rem;
+    flex:1;
+}
+
+.card__link {
+    margin: 0;
+    flex:0;
+}
+
+.card__link a {
+    border-radius: 2rem;
+    background-color: var(--clr-bg-buttons);
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--clr-txt-white_transparent);
+    border:solid 2px transparent;
+    box-sizing: border-box;
+}
+.card__link a:hover{
+    background-color: transparent;
+    color: var(--clr-txt-white_transparent);
+    border:solid 2px var(--clr-txt-white_transparent);
+}
+
+.card__link--sedans a {
+    color: var(--clr-bg-bright_orange)
+}
+
+.card__link--suvs a {
+    color: var(--clr-bg-dark_cyan)
+}
+
+.card__link--luxury a {
+    color: var(--clr-bg-very_dark_cyan)
+}
+
+@media screen and (min-width:800px) {
+    main {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        max-width: 920px;
+    }
+
+    .card {
+        height: 500px;
+    }
+    .card--sedans {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .card--luxury {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+}
+
+
+/* Footer */
+footer {
+    flex: 0;
+    padding: 0.5rem 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
