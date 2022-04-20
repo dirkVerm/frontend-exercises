@@ -14,7 +14,7 @@
 
 
 body {
-    background-color: var(--clr-main_background);
+    background-color: var(--clr-bg-main_background);
     font-size: var(--fnt-size);
     font-family: var(--fnt-standard);
     color: var(--clr-txt-white_transparent);
