@@ -8,11 +8,11 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/11%20Stats%20preview%20card%20component)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/11%20Stats%20preview%20card%20component/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
 
 ## Updates
-2022/03/18
+2022/04/20
 First version
 
 ## Author
