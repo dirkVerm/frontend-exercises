@@ -62,10 +62,16 @@ Dirk Vermeulen
 - 11  Stat preview card component
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/11%20Stats%20preview%20card%20component)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/11%20Stats%20preview%20card%20component/)
+-12 3-column preview card component
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
 ## Bootstrap
 - 01 Basic layout - MDN
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/01%20Basic%20bootstrap%20layout%20-%20MDN)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/01%20Basic%20bootstrap%20layout%20-%20MDN/)
+- 02 3-column preview card component
+    [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/2%203-column%20preview%20card%20component%20-%20Frontend%20Mentor)
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/2%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
 
 
 ## Author
@@ -74,4 +80,5 @@ Dirk Vermeulen
 - Making my way back into developing.
 - Looking forward to work freelance & remote.
 - Udemy [Web Development Bootcamp 2022](https://www.udemy.com/course/the-web-developer-bootcamp/)
+- Portfolio [Developer-frontend](https://developer-frontend.com/)
 
