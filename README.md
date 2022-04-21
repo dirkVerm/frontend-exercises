@@ -62,7 +62,7 @@ Dirk Vermeulen
 - 11  Stat preview card component
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/11%20Stats%20preview%20card%20component)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/11%20Stats%20preview%20card%20component/)
--12 3-column preview card component
+- 12 3-column preview card component
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
 ## Bootstrap
