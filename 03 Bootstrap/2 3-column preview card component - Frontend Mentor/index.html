@@ -10,6 +10,10 @@
 
   <title>Frontend Mentor | 3-column preview card component</title>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,36 +25,36 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <main>
-    <section class="card card--sedans">
+<body class="container d-flex flex-column justify-content-center">
+  <main class="flex-fill d-flex flex-column flex-lg-row align-items-lg-center  justify-content-center m-auto">
+    <section class="card1 card--sedans ">
       <h1 class="card__title">Sedans</h1>
       <p class="card__text">
         Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
         or on your next road trip.
       </p>
       <p class="card__link card__link--sedans">
-        <a href="#">Learn More</a>
+        <a href="#" class="rounded-pill">Learn More</a>
       </p>
     </section>
-    <section class="card card--suvs">
+    <section class="card1 card--suvs">
       <h1 class="card__title">SUVs</h1>
       <p class="card__text">
         Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
         and off-road adventures.
       </p>
       <p class="card__link card__link--suvs">
-        <a href="#">Learn More</a>
+        <a href="#" class="rounded-pill">Learn More</a>
       </p>
     </section>
-    <section class="card card--luxury">
+    <section class="card1 card--luxury">
       <h1 class="card__title">Luxury</h1>
       <p class="card__text">
         Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
         rental and arrive in style.
       </p>
       <p class="card__link card__link--luxury">
-        <a href="#">Learn More</a>
+        <a href="#" class="rounded-pill">Learn More</a>
       </p>
     </section>
   </main>
@@ -60,10 +64,14 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="developer-frontend.com">DirkVerm</a>.
+      Coded by <a href="https://developer-frontend.com">DirkVerm</a>.
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
