@@ -10,8 +10,8 @@ I used this challenge to practice some Bootstrap layout.
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/02%20CSS/12%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/2%203-column%20preview%20card%20component%20-%20Frontend%20Mentor)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/2%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
 
 ## Updates
 2022/04/21
