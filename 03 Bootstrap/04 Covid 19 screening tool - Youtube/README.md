@@ -2,6 +2,12 @@
 
 Building a design for a Covid 19 screening tool using Bootstrap
 
+
+[YouTube challenge](https://www.youtube.com/watch?v=iaRqN-oVOfE)
+[YouTube review](https://www.youtube.com/watch?v=ve-BoImY69A)
+
+[Figma](https://www.figma.com/file/Frs80hDJudAJ83SaTZljBf/COVID19-Screening-Test?node-id=0%3A1)
+
 ![Page 1](_design/Covid19%20Sceening%20tool%20(1).png)
 
 ![Page 2](_design/Covid19%20Sceening%20tool%20(2).png)
@@ -9,9 +15,6 @@ Building a design for a Covid 19 screening tool using Bootstrap
 ![Page 3](_design/Covid19%20Sceening%20tool%20(3).png)
 
 ![Page 4](_design/Covid19%20Sceening%20tool%20(4).png)
-
-[YouTube challenge](https://www.youtube.com/watch?v=iaRqN-oVOfE)
-[Figma](https://www.figma.com/file/Frs80hDJudAJ83SaTZljBf/COVID19-Screening-Test?node-id=0%3A1)
 
 ## Links
 
