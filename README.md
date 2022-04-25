@@ -74,7 +74,7 @@ Dirk Vermeulen
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/2%203-column%20preview%20card%20component%20-%20Frontend%20Mentor/)
 - 03 10 minute website - Youtube
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/03%2010%20minute%20website%20-%20Youtube)
-    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/03%2010%20minute%20w
+    / [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/03%2010%20minute%20website%20-%20Youtube/)
 - 04 Covid 19 screening tool - Youtube
     [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/04%20Covid%2019%20screening%20tool%20-%20Youtube)
     / [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/04%20Covid%2019%20screening%20tool%20-%20Youtube/)
