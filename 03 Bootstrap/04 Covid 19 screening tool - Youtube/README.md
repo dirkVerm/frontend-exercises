@@ -1,6 +1,7 @@
 #  Covid 19 screening tool - Youtube
 
 Building a design for a Covid 19 screening tool using Bootstrap
+
 ![Page 1](_design/Covid19%20Sceening%20tool%20(1).png)
 
 ![Page 2](_design/Covid19%20Sceening%20tool%20(2).png)
@@ -14,8 +15,8 @@ Building a design for a Covid 19 screening tool using Bootstrap
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/03%2010%20minute%20website%20-%20Youtube)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/03%2010%20minute%20website%20-%20Youtube/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/04%20Covid%2019%20screening%20tool%20-%20Youtube)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/04%20Covid%2019%20screening%20tool%20-%20Youtube/)
 
 ## Updates
 2022/04/25
