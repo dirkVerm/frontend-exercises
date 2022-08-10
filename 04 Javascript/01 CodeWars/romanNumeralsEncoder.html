@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numerals Encoder</title>
+</head>
+
+<body>
+    <script>
+        //vierde poging
+        function solution(dec) {
+            const roman = { M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 };
+            let ans = "";
+            for (ro in roman) {
+                while (roman[ro] <= dec) {
+                    ans += ro;
+                    dec -= roman[ro];
+                }
+            }
+            return ans;
+        }
+
+        /*
+                //Derde poging
+                function solution(dec) {
+                    return [
+                        { base: 1000, symbol: "M" },
+                        { base: 900, symbol: "CM" },
+                        { base: 500, symbol: "D" },
+                        { base: 400, symbol: "CD" },
+                        { base: 100, symbol: "C" },
+                        { base: 90, symbol: "XC" },
+                        { base: 50, symbol: "L" },
+                        { base: 40, symbol: "XL" },
+                        { base: 10, symbol: "X" },
+                        { base: 9, symbol: "IX" },
+                        { base: 5, symbol: "V" },
+                        { base: 4, symbol: "IV" },
+                        { base: 1, symbol: "I" },
+                    ].reduce((ro, e) => {
+                        let r = Math.floor(dec / e.base)
+                        dec = dec - r * e.base;
+                        return ro + e.symbol.repeat(r);
+                    },"");
+                }
+        */
+        /*
+                    // Tweede pogoing
+                    function solution(dec) {
+                        const roman = [
+                            { base: 1000, symbol: "M" },
+                            { base: 900, symbol: "CM" },
+                            { base: 500, symbol: "D" },
+                            { base: 400, symbol: "CD" },
+                            { base: 100, symbol: "C" },
+                            { base: 90, symbol: "XC" },
+                            { base: 50, symbol: "L" },
+                            { base: 40, symbol: "XL" },
+                            { base: 10, symbol: "X" },
+                            { base: 9, symbol: "IX" },
+                            { base: 5, symbol: "V" },
+                            { base: 4, symbol: "IV" },
+                            { base: 1, symbol: "I" },
+                        ]
+        
+                        return roman.reduce((ro, e) => {
+                            let r = Math.floor(ro.decimal / e.base)
+                            ro.roman = ro.roman + e.symbol.repeat(r);
+                            ro.decimal = ro.decimal - r * e.base;
+                            return ro;
+                        },
+                            {
+                                decimal: dec,
+                                roman: ""
+                            }
+                        ).roman;
+                    }
+        */
+        /*
+        //Eerste versie
+
+        function solution(number) {
+            // 1000
+            r = Math.floor(number / 1000)
+            roman = roman + "M".repeat(r);
+            number = number-r*1000;
+
+            //900
+            r = Math.floor(number / 900)
+            roman = roman + "CM".repeat(r);
+            number = number - r * 900;
+          
+            //500
+            r = Math.floor(number / 500)
+            roman = roman + "D".repeat(r);
+            number = number - r * 500;
+
+            //100
+            r = Math.floor(number / 100)
+            roman =  r===4 ? roman+"CD" : roman +"C".repeat(r);
+            number = number - r * 100;
+
+            //90
+            r = Math.floor(number / 90)
+            roman = roman + "XC".repeat(r);
+            number = number - r * 90;
+
+            //50
+            r = Math.floor(number / 50)
+            roman = roman + "L".repeat(r);
+            number = number - r * 50;
+
+            //10
+            r = Math.floor(number / 10)
+            roman = r === 4 ? roman + "XL" : roman + "X".repeat(r);
+            number = number - r * 10;
+
+            //9
+            r = Math.floor(number / 9)
+            roman = roman + "IX".repeat(r);
+            number = number - r * 9;
+
+            //5
+            r = Math.floor(number / 5)
+            roman = roman + "V".repeat(r);
+            number = number - r * 5;
+
+            //10
+            r = Math.floor(number / 1)
+            roman = r === 4 ? roman + "IV" : roman + "I".repeat(r);
+            number = number - r * 1;
+
+
+            return roman;
+
+        }
+            */
+
+
+        console.log(solution(1000));
+    </script>
+
+</body>
+
+</html>

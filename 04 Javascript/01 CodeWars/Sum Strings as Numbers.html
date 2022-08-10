@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Strings as Numbers</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/5324945e2ece5e1f32000370/train/javascript
+
+        //Eerste versie
+        function sumStrings(a, b) {
+            let ra = BigInt(a);
+            let rb = BigInt(b);
+            const b0 = BigInt(0);
+            // let ans = BigInt(0);
+            // ans = (ra ? ra : BigInt(0)) + (rb ? rb : BigInt(0));
+            // console.log(ans.toFixed())
+            return (BigInt(a) + BigInt(b)).toString();
+        }
+
+        console.log(typeof sumStrings('712569312664357328695151392', '8100824045303269669937'), sumStrings('712569312664357328695151392', '8100824045303269669937'));
+    </script>
+
+</body>
+
+</html>

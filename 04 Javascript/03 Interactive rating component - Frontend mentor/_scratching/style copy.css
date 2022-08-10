@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --col-white: hsl(0, 0%, 100%);
+    --col-light_grey: hsl(217, 12%, 63%);
+    --col-medium_grey: hsl(216, 12%, 54%);
+    --col-dark_blue: hsl(213, 19%, 18%);
+    --col-very_dark_blue: hsl(216, 12%, 8%);
+    --col-white_transparant: hsla(0, 0%, 100%, 0.05);
+    --col-orange: hsl(25, 97%, 53%);
+    --fnt-standard: 'Overpass', sans-serif;
+}
+
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--col-very_dark_blue);
+    font-family: var(--fnt-standard);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component {
+    background-color: var(--col-dark_blue);
+    border-radius: 0.8rem;
+    padding: 1.3rem 1.667rem 2rem 1.667rem;
+    width: 325px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.component__q {
+    position: relative;
+    padding: 2.5rem 0 0 0;
+}
+
+.component--fase1 .component__q {
+    display: block;
+}
+
+.component--fase2 .component__q {
+    display: none;
+}
+
+.component__q::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--col-white_transparant);
+    border-radius: 50%;
+    background-image: url("../images/icon-star.svg");
+    background-size: 0.9rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.component__q__title {
+    color: var(--col-white);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.component__q__text {
+    color: var(--col-medium_grey);
+    line-height: 1.5;
+    word-spacing: -1px;
+}
+
+.component__q__rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.component__q__btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--col-white_transparant);
+    color: var(--col-medium_grey);
+    transition: all 0.5s;
+}
+
+.component__q__btn:hover {
+    cursor: pointer;
+    background-color: var(--col-orange);
+    color: var(--col-white);
+    transition: all 0.5s;
+}
+
+.component__q__btn.selected {
+    background-color: var(--col-medium_grey);
+    color: var(--col-white);
+}
+
+.component__q__submit {
+    cursor: pointer;
+    background-color: var(--col-orange);
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1.5em;
+    text-transform: uppercase;
+    color: var(--col-white);
+    letter-spacing: 0.2em;
+    transition: all 0.5s;
+}
+
+.component__q__submit:hover {
+    background-color: var(--col-white);
+    color: var(--col-orange);
+}
+
+/* Response component */
+.component__r {
+   background-image: url("../images/illustration-thank-you.svg");
+    background-repeat: no-repeat;
+    background-position: center 12px;
+    background-size: auto 95px;
+    padding: 132px 0 0 0;
+    text-align: center;
+}
+
+.component--fase1 .component__r {
+    display: none;
+}
+
+.component--fase2 .component__r {
+    display: block;
+}
+
+.component__r__result {
+    background-color: var(--col-white_transparant);
+    color: var(--col-orange);
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin: auto;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.component__r__title {
+    color: var(--col-white);
+    margin: 1.75rem 0 0 0;
+    font-size: 1.5rem;
+
+}
+
+.component__r__text {
+    color: var(--col-medium_grey);
+    line-height: 1.5;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.error {
+    color: var(--col-orange);
+    text-align: center;
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    width: 100%;
+}
+
+footer {
+    flex: 0;
+    padding: 0.5rem 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

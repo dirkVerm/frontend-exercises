@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square into Squares</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/javascript
+
+        //Eerste versie
+
+        function validateAns(n, ans) {
+            //Not valid
+            //[n]
+            //[1,1, .... 1] // || ans.filter(el => el !== 1).length === 0 
+            //2 el equal
+            if (ans.length === 0 || ans[0] == n || ans.filter((el, i, a) => el === a[i + 1]).length !== 0) {
+                console.log("Array not valid", ans);
+                return false;
+            }
+            console.log("Array  valid", ans);
+            return true;
+        }
+        function decompose(n) {
+            // your code
+
+            // kwadraat van n berekenen
+            //Floor van vierkantwortel van n^2-1 berekenen
+            // Rest van verschil kwadraten berekenen
+            function decompRec(sqN, s, ans) {
+                console.log("recursive sqN", sqN, "s", s, "ans", ans)
+
+                //Einde recursie als startgetal 0 is
+                if (sqN == 0) return true;
+                if (s != 1) { // Als s 1 is kan 
+                    //Bereken kwadraten
+                    // sqN = Math.pow(n, 2);
+                    sqS = Math.pow(s, 2);
+                    console.log("sqN", sqN, "sqS", sqS)
+
+                    //Bereken de nieuwe n waarde
+                    let _deltaSq = sqN - sqS;
+                    let _n = Math.floor(Math.sqrt(_deltaSq));
+                    console.log("_deltaSq", _deltaSq, "_n", _n)
+
+                    //Indien zelfde waarde > geen stijging meer
+                    if (_n == s) return false;
+
+                    //Zoek een combinatie voor _n
+                    for (let d = 0; d <= _n; d++) {
+                        if (decompRec(_deltaSq, _n - d, ans)) {
+                            ans.push(s);
+                            return true;
+                        }
+                    }
+
+                }
+
+                return false
+            }
+
+
+
+            //Tot vierkantswortel of verschil <=1
+            let sqn = Math.pow(n, 2);
+
+            let ans = [];
+            let i = 0;
+            // sqr--;
+            let t = 0;
+
+            // while (sqr > 0 && ++i < 100) {
+            //     t = Math.floor(Math.sqrt(i === 1 ? sqr - 1 : sqr)); //Hier nog een beter oplossing voor vinden
+            //     // if (t == ans[0])  return null; 
+            //     ans.unshift(t);
+            //     sqr -= Math.pow(t, 2);
+            //     console.log("t=", t, "sqr=", sqr);
+            //     // console.log("Ans temp", ans);
+            // }
+            // // console.log("ans.length", ans.length, ans)
+            // return ans.length ? ans : null;
+            for (let i = 1; i < n; i++) {
+                ans = []
+                if (decompRec(sqn, n - i, ans) && validateAns(n, ans)) return ans;
+            }
+            return null
+        }
+
+        // console.log("[1,3,5,8,49]", decompose(50));
+        // console.log("[leeg]", decompose(4));
+        // console.log("[1,2,3,7,9]", decompose(12));
+        // console.log("[1,2,4,10]", decompose(11));
+        // console.log("[2,3,5,7,43]", decompose(44));
+        // console.log("[2,5,8,34,624]", decompose(625));
+        console.log("[3,4]", decompose(5));
+        // console.log("[?]", decompose(6));
+
+
+
+        // console.log("5,[5]", validateAns(5, [5]))
+        // console.log("5,[1,5]", validateAns(5, [1, 5]))
+        // console.log("5,[1,1,5]", validateAns(5, [1, 1,5]))
+        // console.log("5,[1,1,1]", validateAns(5, [1, 1,1]))
+    </script>
+
+</body>
+
+</html>

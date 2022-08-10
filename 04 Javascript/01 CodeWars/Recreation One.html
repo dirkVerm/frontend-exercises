@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreation one</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/55aa075506463dac6600010d/train/javascript
+
+        //Derde versie
+        //Beter gebruiken van for lus ipv allemaal arrays aan te maken
+        function listSquared(m, n) {
+            let ans = [];
+            for (let num = m; num <= n; num++) { //Loop trough all number
+                let sum = 0;
+                for (let div = 1; div <= num; div++) { // Search for divisors
+                    if (num % div === 0) { //This is divisor
+                        sum += div * div;
+                    }
+                }
+                if (Math.sqrt(sum) % 1 === 0) {
+                    ans.push([num, sum]) // If sum is square > add
+                }
+            }
+            return ans;
+        }
+
+
+        //Tweede versie
+        /*        function listSquared(m, n) {
+                    return [...Array(n - m + 1).keys()] //Make array m-n+1 numbers
+                        .reduce((r, e) => { // Check each number if sum of squared dividers is s
+                            e += m; // Adjust base
+        
+                            //Make array of divisors for this num
+                            //Max divisor is sqrt
+                            let divisors = [...Array(Math.floor(Math.sqrt(e))).keys()]
+                                .slice(1) //Remove 0
+                                .reduce((p, d) => {
+                                    d++; // Start at 2
+                                    if (!(e % d)) {
+                                        p.push(d);
+                                        if (d !== (e / d)) p.push(e / d); //Result of division is also divisor
+                                    }
+                                    return p;
+                                }, [1]); // 1 is allways divisor
+                            if (e !== 1) divisors.push(e); // Number itself is allways divisor
+        
+                            //Calculate sum of squares
+                            let sumRt = divisors.reduce((s, c) => s += Math.pow(c, 2), 0);
+        
+                            //If sum of squared divisor is an square itself, add array 
+                            let sumRtSq = Math.sqrt(sumRt);
+                            if (sumRtSq == Math.floor(sumRtSq)) r.push([e, sumRt]);
+                            return r;
+                        }, []);
+                }
+        */
+        //Eerste versie
+        /*
+                function listSquared(m, n) {
+        
+                    //Array van integers maken tussen m en n
+                    const ans = [...Array(n - m + 1).keys()];
+        
+                    //Per getal nakijken of de som van de kwadraten van de delers, een kwadraat is
+                    const ans1 = ans.reduce((r, e) => {
+                        // Basisgetal bepalen
+                        e += m;
+        
+                        //Delers bepalen
+                        //Maximale basisdeler is vierkantswortel getal
+                        //1 is altijd deler
+                        let divisor = [...Array(Math.floor(Math.sqrt(e))).keys()]
+                            .slice(1) //0 wegdoen, later +1 om vanaf 2 te tellen
+                            .reduce((p, d) => {
+                                d++; // Want altijd deelbaar door 1 dus beginnen vanaf 2
+                                // console.log(e, d)
+                                if (!(e % d)) {
+                                    p.push(d);
+                                    if (d !== (e / d)) p.push(e / d); //Resultaat van deling is ook deler, Zelfde waarde geen 2 keer oplaan
+                                }
+                                return p;
+                            }, [1]); // Altijd deelbaar door 1 dus die moet altijd in array
+                        if (e !== 1) divisor.push(e); // altijd deelbaar door zichzelf ook
+                        // console.log("Delers: ", e, divisor)
+        
+                        //Array met delers doorlopen en som van de kwadraten bepalen 
+                        let sumRt = divisor.reduce((s, c) => {
+                            return s += Math.pow(c, 2)
+                        }, 0);
+                        // console.log("sumRt: ", sumRt)
+                        // console.log("Vierkantswortel: ", e, sumRt, Math.sqrt(sumRt), Math.sqrt(sumRt) == Math.floor(Math.sqrt(sumRt)))
+        
+                        //Als vierkantsworrel som geheel is 
+                        let sumRtSq = Math.sqrt(sumRt);
+                        if (sumRtSq == Math.floor(sumRtSq)) {
+                            r.push([e, sumRt])
+                        };
+                        return r;
+        
+                    }, []);
+                    return ans1;
+                }
+        */
+        console.log(listSquared(797, 2150));
+    </script>
+
+</body>
+
+</html>

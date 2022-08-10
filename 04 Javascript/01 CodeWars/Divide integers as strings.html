@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide integers as strings</title>
+</head>
+
+<body>
+    <script>
+        // https://www.codewars.com/kata/58dea43ff98a7e2124000169/train/javascript
+
+
+        //Eerste versie
+        function divideStrings(a, b) {
+
+            // Substract 2 integers as string
+            function substract(t, n,) {
+                //Quick checks
+                if (t === n) return "0";
+                if (t.length < n.length) return -1
+                if (t.length === n.length && t[0] < n[0]) return -1;
+
+
+                let ans = "";
+                let over = 0;
+                for (let i = 1; i <= t.length; i++) {
+                    let res = t[t.length - i] - over - ((n.length >= i) ? n[n.length - i] : 0);
+                    over = 0;
+                    if (res < 0) {
+                        if (i === t.length) return -1;
+                        over = 1;
+                        res += 10;
+                    }
+                    ans = res + ans;
+                }
+                return ans === "0" ? "0" : ans.replace(/^0+/, ""); //Remove leading zero's
+            }
+
+            // Main script
+
+            // Simple numbers > use float division
+            if (a < Number.MAX_SAFE_INTEGER && b < Number.MAX_SAFE_INTEGER) return [Math.floor(a / b) + "", a % b + ""];
+            //Numbers to large > use string division
+            let ans = "";
+            let rest = "";
+            let div = 0;
+
+            for (let i = 0; i < a.length; i++) {
+                let numerator = (rest != "0" ? rest : "") + a[i];
+                let denominator = b;
+                let result = 0;
+                rest = "";
+                div = 0;
+
+                //Division by substracting
+                while (result !== -1) {
+                    rest = div ? result : numerator;
+                    //If first time, use numerator, else use rest
+                    result = substract(div ? rest : numerator, denominator);
+                    //Increase div counter if substraction was valid
+                    div = result != -1 ? div + 1 : div;
+                }
+                ans += div + "";
+            }
+            return [ans === "0" ? "0" : ans.replace(/^0+/, ""), rest + ""]; //Remove leading zero's
+        }
+
+        // console.log('"19","10"', divideStrings("219", "11"));
+        // console.log('"12","0"', divideStrings("24", "2"));
+        // console.log('"61","1"', divideStrings("123", "2"));
+        // console.log('"3","1"', divideStrings("10", "3"));
+        // console.log('"61","1"', divideStrings("123", "2"));
+
+        //   console.log('"0","0"', divideStrings("0","5"));
+        //   console.log('"0","4"', divideStrings("4","5"));
+        //   console.log('"5","0"', divideStrings("10","2"));
+        //   console.log('"6","2"', divideStrings("20","3"));
+        //   console.log('"12","0"', divideStrings("60","5"));
+        // console.log('"19","1"', divideStrings("219", "11"));
+        console.log('"81","0"', divideStrings("729", "9"))
+        //   console.log('"100","0"', divideStrings("1000","10"));
+        //   console.log('"6000","1"', divideStrings("600001","100"));
+        // console.log('"60443990263206485541371728634253979819003634938023202127514210000","162907322931822773439012150383531719858627926911330376380"', divideStrings("60443990263206485541371728634253979819003634938023202127514210000", "90071992547409919007199254740991"));
+    </script>
+
+</body>
+
+</html>

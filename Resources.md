@@ -35,12 +35,16 @@ So in addition to Colt Steeles course, I used following resources. There are man
 * DONE https://code.visualstudio.com/docs/editor/versioncontrol
 
 ## Bootstrap
+* DONE https://getbootstrap.com/docs/5.1/getting-started/introduction/
 
 
 ## CSS framworks
 * CSSUI https://www.cssui.dev/
 
 ## JavaScript
+* TODO https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+* TODO https://hackernoon.com/javascript-practical-coding-challenges-for-beginners-4bq3ugr
+* TODO https://www.codecademy.com/resources/blog/10-javascript-code-challenges-for-beginners/
 * TODO Javascript debugging with Chrome dev tools https://developer.chrome.com/docs/devtools/overview/ vanaf 17'
 
 ## JS testing
@@ -71,10 +75,14 @@ So in addition to Colt Steeles course, I used following resources. There are man
 ## Package managers
 
 ## CSS Architecture
-* BEM
+* DONE BEM
+
+## CSS Frameworks
+* DONE Bootstrap
+* TODO https://bulma.io/
 
 ## CSS Preprocessors
-* SASS https://sass-lang.com/guide
+* TODO SASS https://sass-lang.com/guide
 
 ## Build tools
 
@@ -112,3 +120,10 @@ So in addition to Colt Steeles course, I used following resources. There are man
 
 ## Google analytics
 * TODO https://analytics.google.com/analytics/web/ 
+
+## Google search
+* TODO https://developers.google.com/search/docs/basics/get-on-google
+* TODO https://www.youtube.com/playlist?list=PLKoqnv2vTMUOnQn-lNDfT38X9gA_CHxTo
+
+## Python
+* TODO https://www.freecodecamp.org/news/object-oriented-programming-with-python-code-a-minesweeper-game/

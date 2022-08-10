@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Balls</title>
+</head>
+
+<body>
+    <script>
+        //Tweede versie
+        function bouncingBall(h, bounce, window) {
+            return (h > 0 && bounce > 0 && bounce < 1 && window < h) ?
+                bouncingBall(h * bounce, bounce, window) + 2 :
+                -1;
+        }
+
+
+        //Eerste versie
+        // function bouncingBall(h, bounce, window) {
+        //     if (h > 0 && bounce > 0 && bounce < 1 && window < h) {
+        //         let i = 0;
+        //         while (h * Math.pow(bounce, ++i) > window);
+        //         return i * 2 - 1;
+        //     }
+        //     return -1;
+        // }
+
+        console.log(bouncingBall(30, 0.75, 1.5));
+    </script>
+
+</body>
+
+</html>

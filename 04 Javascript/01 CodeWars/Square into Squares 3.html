@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square into Squares</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/javascript
+
+        //Versie codewars
+        // function decompose(n, n2 = n * n, i = n, prev) {
+        //     console.log("n",n,"n2", n2, "i", i, "prev", prev);
+
+        //     while (n2 > 0 && i-- > 1) {
+        //         if (prev = decompose(n, n2 - i * i, i)) {
+        //             console.log("prev", prev)
+        //             return prev.concat([i]);
+        //         }
+        //     }
+        //     return (n2 == 0) ? [] : null;
+        // }
+
+        //Eerste versie
+        function decompose(n) {
+
+            function rec(n, delta, ans) {
+                if (delta === 0) return true; //Previous run was solution
+
+                else {
+                    for (n; n >= 1; n--) {
+                        let _delta = delta - squares[n];
+                        let _n = Math.floor(Math.sqrt(_delta));
+                        if (_n >= n) return false; // Row must be strict ascending
+
+                        if (rec(_n, _delta, ans)) { // Look for solution for rest
+                            ans.push(n);
+                            return true;
+                        }
+                    }
+                }
+                //No solution found
+                return false;
+            }
+
+
+            // Array of squares
+            let squares = [];
+            for (i = 1; i < n; i++) squares[i] = Math.pow(i, 2);
+
+            let ans = [];
+            // Start recusion
+            if (rec(n - 1, Math.pow(n, 2), ans)) return ans;
+            return null;
+        }
+
+        // console.log("[1,3,5,8,49]", decompose(50));
+        // console.log("[leeg]", decompose(4));
+        console.log("[1,2,3,7,9]", decompose(12));
+        // console.log("[1,2,4,10]", decompose(11));
+        // console.log("[2,3,5,7,43]", decompose(44));
+        // console.log("[2,5,8,34,624]", decompose(625));
+        console.log("[3,4]", decompose(5));
+        // console.log("[?]", decompose(6));
+
+
+
+        // console.log("5,[5]", validateAns(5, [5]))
+        // console.log("5,[1,5]", validateAns(5, [1, 5]))
+        // console.log("5,[1,1,5]", validateAns(5, [1, 1,5]))
+        // console.log("5,[1,1,1]", validateAns(5, [1, 1,1]))
+    </script>
+
+</body>
+
+</html>

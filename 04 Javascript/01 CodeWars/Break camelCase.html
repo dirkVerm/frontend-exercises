@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break camelCase</title>
+</head>
+
+<body>
+    <script>
+        //Tweede versie
+        function solution(string) {
+            return string.replace(/([A-Z])/g, ' $1');
+        }
+
+        //Eerste versie
+        // function solution(string) {
+        //     return string.split(/(?=[A-Z])/).join(" ");
+        // }
+
+        console.log(solution("camelCasing"));
+    </script>
+
+</body>
+
+</html>

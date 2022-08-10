@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disemvoweled trolls</title>
+</head>
+
+<body>
+
+
+    <script>
+    function disemvowel(str) {
+        return str.split("").filter(e => !["a","e","i","o","u"].includes(e.toLowerCase())).join('');
+
+        //Better solution
+        //return str.replace(/[aeiou]/gi, '');
+    }
+
+        // Test the script
+        let test = 'disemvowel("What are you, a communist?")';
+//        alert(`Result of ${test} is ${eval(test)}`);
+       alert(`Result of ${test} is ${disemvowel("What are you, a communist?")}`);
+    </script>
+</body>
+
+</html>

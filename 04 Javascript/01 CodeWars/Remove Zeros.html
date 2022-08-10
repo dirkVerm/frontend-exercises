@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Zeros</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/52aae14aa7fd03d57400058f/train/javascript
+
+
+        //Eerste versie
+        /*
+        * Params
+        * array list of numbers or strings with number
+        * 
+        * Return: Array 
+        */
+        function removeZeros(array) {
+            let temp = 0;
+            let z = 0; //Pos of first sorted zero from end
+            let i = 0;
+            while (i < array.length - 1 - z) { //Loop through elements excluding the moved 0's
+                if (array[i] == 0) {
+                    temp = array[i]; //Store 0
+                    for (let m = i + 1; m < array.length; m++) array[m - 1] = array[m]; //Shift array 1 pos to left
+                    array[array.length - 1] = temp; //Add sorted O to end
+                    z++;
+                } else i++;
+            }
+            return array;
+        }
+
+
+        console.log(removeZeros([0, 1, "0", 2, 3]));
+        // console.log(removeZeros(163, 3, [50]));
+        // console.log(removeZeros(230, 3, [91, 74, 73, 85, 73, 81, 87]));
+        // console.log(removeZeros(8, 3 , [1, 2, 3,4]));
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayDiff</title>
+</head>
+
+<body>
+
+
+    <script>
+        function arrayDiff(a, b) {
+            // let pos = -1;
+            // for (let item of b) { //Loop through b array
+            //     while ((pos = a.indexOf(item)) !== -1) { //While item is present in array a
+            //         a.splice(pos, 1); //remove item from array a
+            //     }
+            // }
+            // return a;
+
+            return a.filter(e => !b.includes(e));
+        }
+
+        // Test the script
+        let test = "arrayDiff([1,2,3], [1,2])";
+        alert(`Result of ${test} is ${eval(test)}`);
+    </script>
+</body>
+
+</html>

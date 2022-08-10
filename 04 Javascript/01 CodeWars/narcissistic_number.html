@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiples of 3 or 5</title>
+</head>
+
+<body>
+
+
+    <script>
+        // function narcissistic(value) {
+        //     // Code me to return true or false
+        //     let tot = 0;
+        //     value.toString().split("").forEach((e, i, arr) => tot += Math.pow(e, arr.length));
+        //     return tot === value;
+        // }
+
+        function narcissistic(value) {
+            // Code me to return true or false
+
+            return value.toString().split("").reduce((p, c, i, arr) => {return p + Math.pow(c, arr.length)},0) == value;
+        }
+
+        // Test the script
+        let test = "narcissistic(153)";
+        alert(`Result of ${test} is ${eval(test)}`);
+    </script>
+</body>
+
+</html>

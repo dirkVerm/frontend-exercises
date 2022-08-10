@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square into Squares</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/javascript
+
+        //Eerste versie
+
+        function validateAns(n, ans) {
+            //Not valid
+            //[n]
+            //[1,1, .... 1] // || ans.filter(el => el !== 1).length === 0 
+            //2 el equal
+            if (ans.length === 0 || ans[0] == n || ans.filter((el, i, a) => el === a[i + 1]).length !== 0) {
+                console.log("Array not valid", ans);
+                return false;
+            }
+            console.log("Array  valid", ans);
+            return true;
+        }
+
+        function decompose(n) {
+
+            function rec(n, delta, ans) {
+                //Kijk na of er voor deze waarde een kwadraat te vinden is
+                // console.log("rec n, delta, ans", n, delta, ans)
+                // console.log("squares.indexOf(delta)", squares.indexOf(delta));
+
+                let _delta = delta - squares[n];
+
+                // oplossing gevonden
+                if (_delta === 0) {
+                    //Oplossing gevonden
+                    ans.push(n);
+                    return true;
+                }
+                else {
+                    //Geen pasklare oplossing gevonden, kijk na of er een combinatie bestaat
+
+                    for (let _n = Math.floor(Math.sqrt(_delta)); _n >= 1; _n--) {
+
+                        //_n moet kleiner dan n zijn anders is de reeks niet continue stijgend
+                        if (_n >= n) return false;
+
+                        //Kijk na of er een oplossing gevonden wordt voor de rest
+                        if (rec(_n, _delta, ans)) { // oplossing gevonden
+                            ans.push(n);
+                            return true;
+                        }
+                    }
+                }
+
+                //Geen oplossing gevonden
+                return false;
+            }
+
+
+            // sqN = Math.pow(n);
+            // Array of squares
+            let squares = [];
+            for (i = 1; i < n; i++) squares[i] = Math.pow(i, 2);
+            let ans = [];
+            // console.log(squares)
+
+            //Recursie starten
+            for (let _n = n - 1; _n >= 1; _n--) {
+                if (rec(_n, Math.pow(n, 2), ans)) return ans;
+            }
+            return null;
+
+        }
+
+        // console.log("[1,3,5,8,49]", decompose(50));
+        // console.log("[leeg]", decompose(4));
+        // console.log("[1,2,3,7,9]", decompose(12));
+        // console.log("[1,2,4,10]", decompose(11));
+        // console.log("[2,3,5,7,43]", decompose(44));
+        console.log("[2,5,8,34,624]", decompose(625));
+        // console.log("[3,4]", decompose(5));
+        // console.log("[?]", decompose(4));
+
+
+
+        // console.log("5,[5]", validateAns(5, [5]))
+        // console.log("5,[1,5]", validateAns(5, [1, 5]))
+        // console.log("5,[1,1,5]", validateAns(5, [1, 1,5]))
+        // console.log("5,[1,1,1]", validateAns(5, [1, 1,1]))
+    </script>
+
+</body>
+
+</html>

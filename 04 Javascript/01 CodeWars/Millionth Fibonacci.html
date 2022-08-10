@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millionth Fibonacci</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/53d40c1e2f13e331fc000c26/train/javascript
+
+        /*
+        * Calculating large numbers fibonacci
+        * https://codeforces.com/blog/entry/14385
+        * https://raganwald.com/2015/12/20/an-es6-program-to-compute-fibonacci.html
+        * http://www.maths.surrey.ac.uk/explore/emmaspages/option1.html
+        * 
+        */
+
+
+        /*
+        * Zesde versie
+        */
+        // const fib = n =>
+        //     (fn => n < 0 && !(n % 2) ? -fn(Math.abs(n))[0] : fn(Math.abs(n))[0])
+        //         (function fn(n) {
+        //             if (!n) return [0n, 1n];
+        //             const [_n, _n1] = fn(n >> 1);
+        //             const _2n = _n * (2n * _n1 - _n);
+        //             const _2n1 = _n ** 2n + _n1 ** 2n;
+        //             return n % 2 ? [_2n1, _2n + _2n1] : [_2n, _2n1];
+        //         });
+
+        function fib(n) {
+            return n < 0 && !(n % 2) ? -fn(Math.abs(n))[0] : fn(Math.abs(n))[0] //Plaats minteken voor negatieve waarden
+
+            function fn(n) {
+                if (!n) return [0n, 1n]; //Einde recursie 0 en 1 teruggeven
+                const [_n, _n1] = fn(n >> 1); //Plaats vorige waarden in _n (Waarde n) en _n1 (Waarde n+1)
+                //n >> 1 = delen door 2 
+                const _2n = _n * (2n * _n1 - _n); //Bereken waarde (n+2) = _n(2*_n1-_n)
+                const _2n1 = _n ** 2n + _n1 ** 2n;//Bereken waarde (n+2 + 1) = _n^2+_n1^2
+                /*
+                Als n even was dan is de huidige waarde _2n1 ed volgende waarde _2n + _2n1
+                Als n oneven was zijn de waarden zoals berekend nl huidige waarde _2n en volgende waarde _2n1
+                */
+                return n % 2 ? [_2n1, _2n + _2n1] : [_2n, _2n1];
+
+            }
+        };
+
+        /*
+        * Vijfde versie
+        * 
+        * Matrices
+        * [ 1 1 ] n      [ F(n+1) F(n)   ]
+        * [ 1 0 ]    =   [ F(n)   F(n-1) ]
+        *
+        */
+
+
+        // function fib(n) {
+        //     //Multiply matrices
+        //     function multMatrix(...matrices) {
+        //         return matrices.reduce(([a, b, c], [d, e, f]) => [a * d + b * e, a * e + b * f, b * e + c * f]);
+        //     }
+        //     //Caculate pow matrices
+        //     function powMatrix(matrix, n) {
+        //         if (n === 1) return matrix; //End recursion
+        //         //Split multiplication in 2
+        //         let halves = powMatrix(matrix, Math.floor(n / 2));
+        //         return n % 2 === 0 //If n == odd, multiply one extra
+        //             ? multMatrix(halves, halves)
+        //             : multMatrix(halves, halves, matrix);
+        //     }
+        //     // Main script
+        //     if (n <= 1 && n >= 0) return BigInt(n);
+        //     if (n === -1) return 1n;
+        //     return powMatrix([1n, n < 0 && !(n%2) ? -1n : 1n, 0n], Math.abs(n))[1];
+        // }
+
+        /*
+        * Vierde versie
+        *
+        * Gebruikt de formule van Bichet
+        * https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression
+        * https://betterprogramming.pub/fibonacci-algorithm-in-javascript-45743f3a0ff6
+
+        * Probleem is de limiet voor floating nr voor de berekening
+        * n 10000 geeft infinity voor berekening
+        */
+        // const sqrt5 = Math.sqrt(5);
+        // const golden_ratio1 = (1 + sqrt5) / 2;
+        // const golden_ratio2 = (1 - sqrt5) / 2;
+        // function fib(n) {
+        //     // console.log(golden_ratio1, golden_ratio2, sqrt5)
+        //     return BigInt((Math.pow(golden_ratio1, n) - Math.pow(golden_ratio2, n)) / sqrt5);
+        // }
+
+        /*
+        * Derde versie
+        *
+        * Recursief met memoization
+        * https://betterprogramming.pub/fibonacci-algorithm-in-javascript-45743f3a0ff6
+        *
+        * Resultaten worden in array opgeslagen
+        *                       Fib(4)
+        *                       /    \
+        *                  Fib(3)    Fib(2)
+        *                /     \     /   \
+        *           Fib(2)  Fib(1) Fib(1)  Fib(0)
+        *           /    \
+        *        Fib(1) Fib(0)
+        * We are computing the result of Fib(2) twice.
+        */
+
+        // function fib(n, cache=[]) {
+        //     if(n==0) return 0n;
+        //     if(n==1) return 1n;
+        //     if(cache[n]) return cache[n];
+
+        //     cache[n]= fib(n - 1, cache) + fib(n - 2,cache)
+        //     return cache[n];
+        // }
+
+
+        /*
+        * Tweede versie
+        *
+        * Recursief
+        *
+        * Veel trager dan eerste
+        * bij n 1000 duurt het lang
+        * bij n 10000 too many recursions
+        */
+
+        // function fib(n) {
+        //     if(n==0) return 0n;
+        //     if(n==1) return 1n;
+        //     return fib(n-1)+ fib(n-2);
+        // }
+
+
+        //Eerste versie
+
+        /*
+        Iteratieve methode
+        werkt goed maar  n 100000 is traag
+        2.7s
+        */
+
+        // function fib(n) {
+        //     let f = [0n, 1n];
+        //     if (n == 0) return 0n;
+        //     // let sign = BigInt(Math.sign(n));
+        //     let max = Math.abs(n);
+        //     // console.log( "max", max)
+        //     for (let i = 1; i < max; i++) {
+        //         [f[0], f[1]]=[f[1],f[0]+f[1]];
+        //         // console.log("i",i,"f",f);
+        //     }
+        //     return f[1];
+        // }
+
+        // console.log(0, fib(0));
+        // console.log(1, fib(1));
+        // console.log(2, fib(2));
+        // console.log(3, fib(3));
+        // console.log(4, fib(4));
+        // console.log(5, fib(5));
+        // console.log(6, fib(6));
+        // console.log(100, fib(100), 354224848179261915075n);
+        // console.log(1000, fib(1000));
+        // console.log(10000,fib(10000));
+        // console.log(100000,fib(100000));
+        // console.log(1000000,fib(1000000));
+        console.log(0, fib(0));
+        console.log(-1, fib(-1));
+        console.log(-2, fib(-2));
+        console.log(-3, fib(-3));
+        console.log(-4, fib(-4));
+        console.log(-5, fib(-5));
+        console.log(-6, fib(-6));
+        console.log(-19, fib(-19));
+
+    </script>
+
+</body>
+
+</html>

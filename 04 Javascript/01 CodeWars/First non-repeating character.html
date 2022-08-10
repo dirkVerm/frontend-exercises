@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numerals Encoder</title>
+</head>
+
+<body>
+    <script>
+
+
+        //Derde
+        function firstNonRepeatingLetter(s) {
+            let sLower = s.toLowerCase();
+            for (l in sLower)
+                if (sLower.indexOf(sLower[l]) == sLower.lastIndexOf(sLower[l]))     return s[l];
+            return "";
+        }
+
+        //Tweede
+        // function firstNonRepeatingLetter(s) {
+        //             let sLower = s.toLowerCase();
+        //             let chars = " ";
+        //             for (let l = 0; l < sLower.length; l++) {
+        //                 if (!chars.includes(sLower[l]) && sLower.indexOf(sLower[l], l + 1) === -1)
+        //                             return s[l]
+        //                 else
+        //                     chars += sLower[l];
+        //             }
+        //         }
+
+        // function firstNonRepeatingLetter(s) {
+        //     let sLower = s.toLowerCase();
+        //     let chars = " ";
+        //     for (let l = 0; l < sLower.length; l++) {
+        //         if (!chars.includes(sLower[l])) {
+        //             if (sLower.indexOf(sLower[l], l + 1) === -1)
+        //                 return s[l]
+        //             else
+        //                 chars += sLower[l];
+        //         }
+        //     }
+        // }
+        console.log(firstNonRepeatingLetter("ABCabcdEd"));
+    </script>
+
+</body>
+
+</html>

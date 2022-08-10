@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numerals Helper</title>
+</head>
+
+<body>
+    <script>
+        //https://www.codewars.com/kata/51b66044bce5799a7f000003/train/javascript
+
+        //Eerste versie
+        RomanNumerals = {
+            roman: { M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 },
+            toRoman: function (dec) {
+                let ans = "";
+                for (r in this.roman) {
+                    while (this.roman[r] <= dec) {
+                        ans += r;
+                        dec -= this.roman[r];
+                    }
+                }
+                return ans;
+            },
+            fromRoman: function (rom) {
+                let ans = 0;
+                for (r in this.roman) {
+                    while (rom.indexOf(r) === 0) {
+                        ans += this.roman[r];
+                        rom = rom.replace(r, '');
+                    }
+                }
+                return ans;
+            }
+        }
+
+        //console.log(romanNaturals.toRoman(2090));
+        console.log(RomanNumerals.fromRoman(RomanNumerals.toRoman(1259)));
+    </script>
+
+</body>
+
+</html>

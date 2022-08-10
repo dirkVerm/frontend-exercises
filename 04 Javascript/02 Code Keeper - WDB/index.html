@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- <div class="container">
+    <div class="row">
+        <div class="col-6 mx-auto">bla bla
+
+        </div>
+    </div>
+</div> -->
+
+    <div class="scoreKeeper card w-50 mx-auto mt-5 shadow">
+        <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"" alt="
+            Tabletennis" class="card-img-top scoreKeeper__img">
+        <div class="card-body">
+            <h1 class="card-title scoreKeeper__title">Ping pong scorekeeper</h1>
+            <p class="scoreKeeper_score display-4 text-center"><span class="scoreKeeper_scoreP1">0</span> to <span
+                    class="scoreKeeper_scoreP2">0</span></p>
+            <p class="card-text ">Use buttons below to keep score.</p>
+            <p class="scoreKeeper__select card-text fw-bold fs-4">
+                <label for="to">Playing to</label>
+                <select id="to" class="scoreKeeper__to form-select form-select-sm w-auto d-inline">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select></p>
+                <div class="btn-group btn-group-lg d-flex" role="group">
+                <button class="scoreKeeper_btnP1 btn btn-success" id="btnP1">+1 Player 1</button>
+                <button class="scoreKeeper_btnP2 btn btn-primary" id="btnP2">+1 Player 2</button>
+                <button class="scoreKeeper_btnReset btn btn-danger">Reset</button>
+
+                </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

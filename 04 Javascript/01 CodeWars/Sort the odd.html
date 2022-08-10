@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort the odd</title>
+</head>
+
+<body>
+    <script>
+        //Tweede oplosso,g
+        function sortArray(array) {
+            const odd = array.filter(e => e % 2).sort((a, b) => a - b);
+            return array.map(e => e % 2 ? odd.shift() : e)
+        }
+
+
+        //Eerste versie
+        // function sortArray(array) {
+        //     let pos = 0;
+        //     const odd = array.filter(e => e%2).sort((a,b)=> a-b);
+        //     return array.map(e=>e%2?odd[pos++]:e)
+        // }
+
+        console.log(sortArray([1, 11, 2, 8, 3, 4, 5]
+        ));
+    </script>
+
+</body>
+
+</html>

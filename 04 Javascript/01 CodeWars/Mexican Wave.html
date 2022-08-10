@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Wave</title>
+</head>
+
+<body>
+    <script>
+
+        //Derde versie
+        function wave(str) {
+            return str.split('').map((e, i) => (e != " ") ? str.slice(0, i) + e.toUpperCase() + str.slice(i + 1) : "").filter(e => e)
+        }
+
+        //Tweede versie
+        // function wave([...str]) {
+        //     return str.map((e, i) => (e != " ") ? str.slice(0, i).join('') + e.toUpperCase() + str.slice(i + 1).join('') : "").filter(e => e)
+        // }
+
+        //Eerste versie
+        // function wave(str) {
+        //     return str.split('').map((e, i, arr) => {
+        //         if (e != " ") {
+        //             const T = [...arr];
+        //             T[i] = e.toUpperCase();
+        //             return T.join('');
+        //         }
+        //     }).filter(e => e)
+        // }
+
+        console.log(wave("tes t"));
+    </script>
+
+</body>
+
+</html>
