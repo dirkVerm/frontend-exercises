@@ -13,8 +13,8 @@ Your users should be able to:
 
 ## Links
 
-- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/03%20Bootstrap/04%20Covid%2019%20screening%20tool%20-%20Youtube)
-- [Live Site URL](https://dirkverm.github.io/frontend-exercises/03%20Bootstrap/04%20Covid%2019%20screening%20tool%20-%20Youtube/)
+- [Code URL](https://github.com/dirkVerm/frontend-exercises/tree/main/04%20Javascript/03%20Interactive%20rating%20component%20-%20Frontend%20mentor)
+- [Live Site URL](https://dirkverm.github.io/frontend-exercises/04%20Javascript/03%20Interactive%20rating%20component%20-%20Frontend%20mentor/)
 
 ## Updates
 2022/08/10
