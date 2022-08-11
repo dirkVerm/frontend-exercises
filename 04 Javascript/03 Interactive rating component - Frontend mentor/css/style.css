@@ -118,6 +118,7 @@ main {
     color: var(--col-white);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    outline: none;
 }
 
 .component__q__btn.selected {
@@ -139,9 +140,11 @@ main {
     transition: all 0.5s;
 }
 
-.component__q__submit:hover {
+.component__q__submit:hover,
+.component__q__submit:focus {
     background-color: var(--col-white);
     color: var(--col-orange);
+    outline: none;
 }
 
 /* Response component */
