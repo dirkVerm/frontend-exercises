@@ -111,7 +111,8 @@ main {
     transition: all 0.5s;
 }
 
-.component__q__btn:hover {
+.component__q__btn:hover,
+.component__q__btn:focus {
     cursor: pointer;
     background-color: var(--col-orange);
     color: var(--col-white);
